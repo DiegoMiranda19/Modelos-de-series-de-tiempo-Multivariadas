@@ -1,0 +1,26 @@
+[project]
+name = "modelos-var-vec"
+version = "0.1.0"
+description = "El presente proyecto tiene como objetivo, poner en pratica sobre los modelos de series de tiempo financieras VAR y VEC"
+authors = [
+    {name = "DiegoMiranda19", email = "entridox19@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "statsmodels>=0.14.0",
+    "matplotlib>=3.7.0",
+    "ipykernel (>=7.2.0,<8.0.0)"
+]
+
+[tool.poetry]
+# Esta es la línea clave que soluciona tu error
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
